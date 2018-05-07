@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST', name='Add')
+    label Title
+      input(type='text', name='title')
+    label Description
+      input(type='textarea', name='description')
+    input(type='submit', value='Save')
